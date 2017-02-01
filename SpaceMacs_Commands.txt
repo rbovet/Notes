@@ -1,0 +1,40 @@
+#Now let's go for the gold and setup spacemacs!
+cd
+git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d
+
+SpaceMacs Commands
+
+mq		Creates a mark named ‘q’
+d’q		Delete from here to mark ‘q’
+y’q		Yank from here to mark ‘q’ (?)
+=’q		Auto indents region from here to mark ‘q’
+==		Auto indents current line
+V		Enter Visual mode (so it’s easy to select a region)
+space c l	to comment or uncomment the region
+space p t	brings up a dir tree (Neotree) in a pane on the left
+space 0 goes to Neotree window.  Then you can:
+  K go to the parent of the current Neotree root.
+  R set a new Neotree root.
+  c create a node
+  r rename a node
+  d delete a node
+  g refresh
+  s toggle showing hidden files
+space w - (or space w s) splits current window below cursor
+space w S splits current window below cursor and shifts focus
+space w / (or space w v) splits current window to the right of the cursor
+space w V splits current window to the right of the cursor and shifts focus
+space w w shifts focus to other window
+space w c closes current window
+space p f	brings up a fuzzy search of files
+space p b	
+space m x ‘	change double to single quote
+space b b list all and switch buffer
+space b s	switch to a new ‘scratch’ buffer
+space f s	save a buffer to a file (can type in the filename for a scratch buffer)
+space f j	(dired jump) lets you move top dir.  Then toggle neotree (space p t) off and back on to affect the neotree
+
+# adding support for Elixir in SpaceMacs
+M-x package-refresh-contents   (this gets you the latest definitions of packages from MELPA)
+M-x package-install [RET] elixir-mode [RET]   (now when you open an Elixir file it will edit in Elixir mode)
+M-x package-install [RET] alchemist [RET]     (this adds Elixir tooling)
