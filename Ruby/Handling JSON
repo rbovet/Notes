@@ -1,0 +1,9 @@
+require 'multi_json'
+MultiJson.dump( { :x => 2}) gives JSON equivalent
+MultiJson.load( json) gives Ruby object
+rescue MultiJson::ParseError => err
+  puts err.cause
+end
+
+Also, to convert a string into JSON:
+json = JSON.parse(json_string)
