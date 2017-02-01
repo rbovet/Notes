@@ -32,7 +32,6 @@ space m x ‘	change double to single quote
 space b b list all and switch buffer
 space b s	switch to a new ‘scratch’ buffer
 space f s	save a buffer to a file (can type in the filename for a scratch buffer)
-space f j	(dired jump) lets you move top dir.  Then toggle neotree (space p t) off and back on to affect the neotree
 
 # adding support for Elixir in SpaceMacs
 M-x package-refresh-contents   (this gets you the latest definitions of packages from MELPA)
