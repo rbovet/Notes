@@ -1,0 +1,4 @@
+# adding xfce
+yum --enablerepo=epel -y groups install "Xfce"
+then when you login to your VDI just click the funny icon at the upper right of the screen and choose whether you want Mate or Xfce.
+You can add choices to the panel at the bottom by selecting Applications and finding the app you want, then control and select and drag it to where you want it in the panel and release the mouse.
