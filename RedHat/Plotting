@@ -1,0 +1,5 @@
+# install gnuplot
+sudo yum install gnuplot
+
+# and ctioga2 (a gnuplot alternative)
+gem install ctioga2
