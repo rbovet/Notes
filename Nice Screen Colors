@@ -1,0 +1,18 @@
+#Install 'solarization' package to make nice colors on screen
+if [ ! -d "$HOME/.solarized" ]
+then
+  echo 'Setting up solarized'
+  mkdir $HOME/.solarized
+  cd $HOME/.solarized
+  git clone https://github.com/seebi/dircolors-solarized.git
+  eval dircolors ~/.solarized/dircolors-solarized/dircolors.ansi-light # or .256dark
+  ln -s ~/.solarized/dircolors-solarized/dircolors.ansi-light ~/.dir_colors # or .256dark
+  git clone https://github.com/sigurdga/gnome-terminal-colors-solarized.git
+  cd gnome-terminal-colors-solarized
+  ./install.sh # select the appropriate scheme relative to your earlier choice
+  cd ..
+  git clone https://github.com/oz123/solarized-mate/terminal.git
+  cd solarized-mate-terminal
+  ./solarized-mate.sh
+  cd ../..
+fi
